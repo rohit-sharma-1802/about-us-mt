@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rohit</title>
+    <style>
+        *, .main_quality_container {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .cont {
+            padding: 40px;
+            height: 45vh;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: #fff;
+            text-align: center;
+        }
+        .cont::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #004aad;
+            opacity: 0.7;
+            z-index: 1;
+            filter: blur(3px);
+        }
+        .cont .heading {
+            font-size: 5rem;
+            font-weight: 700;
+            z-index: 2;
+            position: relative;
+        }
+        .main {
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+            padding-top: 60px;
+        }
+        .container, .seperate .container1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 54px;
+            padding-bottom: 80px;
+
+        }
+        .card {
+            flex: 1 1 calc(33.333% - 40px);
+            min-width: 280px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #333;
+        }
+        .card a {
+            display: block;
+            margin-top: 20px;
+            color: #004aad;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .customer_review_image_card {
+    /* width: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+		.main_customer_review_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: row;
+}
+.main_customer_review_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 55px;
+    padding-bottom: 100px;
+}
+.customer_review_image_card img {
+    width: 209px;
+}
+.additional__info__box h2{
+  padding-inline: 100px;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+.customer_review_image_card img {
+    width: 290px;
+    border: 1px solid #cfcbcb;
+    height: 274px;
+    padding: 32px;
+    border-radius: 10px;
+}
+        @media (max-width: 768px) {
+            .cont {
+                padding: 20px;
+                height: auto;
+            }
+
+            
+            .cont .heading {
+                font-size: 2.5rem;
+            }
+            .card {
+                flex: 1 1 100%;
+            }
+            .additional__info__box h2 {
+    padding-inline: 0px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 23px;
+}
+        }
+        @media (max-width: 480px) {
+            .cont .heading {
+                font-size: 2rem;
+            }
+
+        }
+    </style>
+</head>
+<body>
+  <div class="main_quality_container">
+    <div class="cont" style="background-image: url('quality-bg.jpg');">
+      <h2 class="heading">Quality Matters to Us</h2>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="card">
+          <h2>An ISO 9001:2015 Certified Entity</h2>
+          <p>At Maketronics Communications LLP, quality is our top priority. We are proud to be ISO 9001:2015 certified, reflecting our dedication to maintaining the highest standards in our operations and customer service. <a href="#">View certificate <i class="fa fa-arrow-right"></i></a></p>
+        </div>
+        <div class="card">
+          <h2>IDEA-STD-1010-B Compliance</h2>
+          <p>At Maketronics Communications LLP, we are committed to providing the highest quality electronic components to our customers. As part of our dedication to excellence, we adhere to the stringent standards set forth by the Independent Distributors of Electronics Association (IDEA) through IDEA-STD-1010-B.</p>
+        </div>
+      </div>
+      <div class="seperate">
+        <div class="container1">
+          <div class="card">
+            <h2>Purchase Order Terms and Conditions</h2>
+            <p>By shipping against this Purchase Order, or any part thereof, Seller acknowledges and agrees to the following Terms and Conditions unless otherwise stated on the front of this Purchase Order... <a href="/terms-and-condtions">Read more <i class="fa fa-arrow-right"></i></a></p>
+          </div>
+          <div class="card">
+            <h2>Sales Order Terms and Conditions</h2>
+            <p>Acceptance of Orders. All orders are subject to acceptance in writing by Maketronics Communications LLP. Written acknowledgement of receipt does not, in and of itself, constitute acceptance.. <a href="/terms-and-condtions">Read more <i class="fa fa-arrow-right"></i></a></p>
+          </div>
+          <div class="card">
+            <h2>Tie-ups with 3rd party component testing facilities</h2>
+            <p>The information about the tag... <a href="/terms-and-condtions">Read more <i class="fa fa-arrow-right"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="additional__info__box">
+      <h2>What Our Customers Say</h2>
+      <div class="main_customer_review_section">
+        <div class="customer_review_image_card">
+          <img src="https://kristr.com/wp-content/uploads/2024/07/price.png" />
+        </div>
+        <div class="customer_review_image_card">
+          <img src="https://kristr.com/wp-content/uploads/2024/07/sales.png" />
+        </div>
+        <div class="customer_review_image_card">
+          <img src="https://kristr.com/wp-content/uploads/2024/07/quality.png" />
+        </div>
+        <div class="customer_review_image_card">
+          <img src="https://kristr.com/wp-content/uploads/2024/07/overall.png" />
+        </div>
+        <div class="customer_review_image_card">
+          <img src="https://kristr.com/wp-content/uploads/2024/07/delivery.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
