@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/52994bef05.js" crossorigin="anonymous"></script>
     <title>rohit</title>
     <style>
         *, .main_quality_container {
@@ -47,7 +48,7 @@
         .main {
             padding: 20px;
             margin: auto;
-            max-width: 1200px;
+            max-width: 1400px;
             padding-top: 60px;
         }
         .container, .seperate .container1 {
@@ -55,24 +56,27 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 54px;
-            padding-bottom: 80px;
+            padding-bottom: 60px;
 
         }
         .card {
             flex: 1 1 calc(33.333% - 40px);
             min-width: 280px;
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            background-color: #f9f9f9;
+            /* border: 1px solid #ccc; */
+            border-radius: 2px;
+            /* background-color: #f9f9f9; */
             text-align: center;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        .card_about{
+          display: flex;
+          justify-content: space-between;
+          gap: 50px;
         }
+
+       
         .card h2 {
             font-size: 1.5rem;
             margin-bottom: 20px;
@@ -81,137 +85,302 @@
             font-size: 1rem;
             color: #333;
         }
+
         .card a {
             display: block;
-            margin-top: 20px;
+            margin-top: 5px;
             color: #004aad;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
         }
         .card a:hover {
             text-decoration: underline;
         }
 
-        .customer_review_image_card {
-    /* width: 150px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-		.main_customer_review_section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    flex-direction: row;
-}
-.main_customer_review_section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 60px;
-    flex-direction: row;
-    align-items: center;
-    row-gap: 55px;
-    padding-bottom: 100px;
-}
-.customer_review_image_card img {
-    width: 209px;
-}
-.additional__info__box h2{
-  padding-inline: 100px;
-  text-align: center;
-  padding-bottom: 30px;
-  font-size: 40px;
-}
-.customer_review_image_card img {
-    width: 290px;
-    border: 1px solid #cfcbcb;
-    height: 274px;
-    padding: 32px;
-    border-radius: 10px;
-}
-        @media (max-width: 768px) {
-            .cont {
-                padding: 20px;
-                height: auto;
-            }
+        .about_content{
+          text-align: justify;
+        }
+        .about_content h2{
+          font-size: 50px;
+          color: #004aad;
+        }
 
-            
-            .cont .heading {
-                font-size: 2.5rem;
-            }
-            .card {
-                flex: 1 1 100%;
-            }
-            .additional__info__box h2 {
-    padding-inline: 0px;
+        .about_content h5{
+          font-size: 20px;
+          padding-bottom: 10px;
+        }
+
+        .card_img_about img{
+          width: 400px;
+          height: 300px;
+        }
+        .seperate h2{
+          text-align: center;
+          font-size: 50px;
+          padding: 20px;
+          color: #004aad;
+          font-weight: 600;
+        }
+
+        .address-card{
+          flex: 1 1 calc(33.333% - 40px);
+            min-width: 280px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            background-color: #f9f9f9;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .address-card {
+          font-size: 10px;
+        }
+
+        .address-card{
+          display: flex;
+          justify-content: space-between;
+          text-align: left;
+          gap: 10px;
+        }
+     
+
+        .address-card img{
+          width: 300px;
+          height: 200px;
+        }
+.stats-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
     text-align: center;
-    padding-bottom: 30px;
-    font-size: 23px;
+    padding-block: 50px;
 }
-        }
-        @media (max-width: 480px) {
-            .cont .heading {
-                font-size: 2rem;
-            }
 
-        }
+.stat-item{
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #9e9e9e9c;
+  
+}
+.stat-item h2 {
+    font-size: 48px;
+    color: #004aad;
+    margin: 0;
+    font-weight: bold;
+}
+
+.stat-item p {
+    font-size: 24px;
+    color: #0b0808;
+    margin: 10px 0 0;
+}
+
+.rev{
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+    .cont {
+        height: 35vh;
+    }
+
+    .cont .heading {
+        font-size: 3rem;
+    }
+
+    .about_content h2 {
+        font-size: 1.75rem;
+    }
+
+    .about_content h5 {
+        font-size: 0.875rem;
+    }
+
+    .seperate h2 {
+        font-size: 1.75rem;
+    }
+
+    .card_about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 36px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .cont {
+        height: 25vh;
+        padding: 20px;
+    }
+
+    .cont .heading {
+        font-size: 2rem;
+    }
+
+    .about_content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about_content h5 {
+        font-size: 0.75rem;
+    }
+
+    .seperate h2 {
+        font-size: 1.5rem;
+    }
+
+    .stats-section {
+        gap: 20px;
+    }
+
+    .stat-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .stat-item p {
+        font-size: 0.875rem;
+    }
+
+    .address-card{
+      flex-direction: column;
+      text-align: center;
+    }
+    .address-card img{
+      width: 100%;
+    }
+
+    .stats-section {
+        gap: 20px;
+        padding: 36px;
+    }
+
+  
+}
     </style>
 </head>
 <body>
   <div class="main_quality_container">
-    <div class="cont" style="background-image: url('quality-bg.jpg');">
-      <h2 class="heading">Quality Matters to Us</h2>
+    <div class="cont" style="background-image: url('about_us.jpg');">
+      <h2 class="heading">About us</h2>
     </div>
     <div class="main">
       <div class="container">
-        <div class="card">
-          <h2>An ISO 9001:2015 Certified Entity</h2>
-          <p>At Maketronics Communications LLP, quality is our top priority. We are proud to be ISO 9001:2015 certified, reflecting our dedication to maintaining the highest standards in our operations and customer service. <a href="#">View certificate <i class="fa fa-arrow-right"></i></a></p>
-        </div>
-        <div class="card">
-          <h2>IDEA-STD-1010-B Compliance</h2>
-          <p>At Maketronics Communications LLP, we are committed to providing the highest quality electronic components to our customers. As part of our dedication to excellence, we adhere to the stringent standards set forth by the Independent Distributors of Electronics Association (IDEA) through IDEA-STD-1010-B.</p>
+        <div class="card card_about">
+         <div class="card_img_about">
+          <img src="/about.jpg" alt="">
+         </div>
+         <div class="about_content">
+          <h2>Who We Are</h2>
+          <h5>About Maketronics</h5>
+          <p>With offices in the UAE, and India. We are a team of experts who help procurement, engineering, and design teams navigate through the complex landscape of sourcing electronic components. We extend value to our customers ranging from Automotive, Healthcare, Defense, Logistics, Retail Electronics, Logistics, iOT, Oil & Gas and Telecommunications by sourcing obsolete, hard-to-find, discontinued, and end-of-life electronic components. We pride ourselves on our exemplary customer service, sense of urgency, ability to build trust and provide convenience to our customers.</p>
+         </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="card card_about rev">
+         <div class="card_img_about">
+          <img src="/mission.jpg" alt="">
+         </div>
+         <div class="about_content">
+          <h2>Our Mission</h2>
+          <p>To provide high-quality electronic and electrical components, with a focus on obsolete parts, ensuring customer satisfaction through a commitment to excellence, compliance with international standards, and a customer-centric approach.</p>
+         </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card card_about">
+         <div class="card_img_about">
+          <img src="/vision.jpg" alt="">
+         </div>
+         <div class="about_content">
+          <h2>Our Vision</h2>
+          <p>To become a top 10 global distributor of obsolete electronic components by 2030, recognized for our ability to manage component obsolescence, our commitment to quality, and our innovative solutions that address the evolving needs of our customers.</p>
+         </div>
+        </div>
+      </div>
+
       <div class="seperate">
+        <h2>Registered Offices</h2>
         <div class="container1">
-          <div class="card">
-            <h2>Purchase Order Terms and Conditions</h2>
-            <p>By shipping against this Purchase Order, or any part thereof, Seller acknowledges and agrees to the following Terms and Conditions unless otherwise stated on the front of this Purchase Order... <a href="/terms-and-condtions">Read more <i class="fa fa-arrow-right"></i></a></p>
+          <div class="card address-card">
+            <img src="/uae.jpg" alt="">
+            <p>Maketronics Communications L.L.C-FZ <br>Meydan Grandstand, 6th floor, Meydan road,<br>Nad Al Sheba, Dubai, U.A.E
+              <a href="mailto: sales@make-tronics.com"><i class="fa fa-envelope"></i> sales@make-tronics.com</a>
+              <a href="https://www.linkedin.com/company/maketronics/"><i class="fa fa-linkedin-square"></i> Maketronics</a>
+            </p>
           </div>
-          <div class="card">
-            <h2>Sales Order Terms and Conditions</h2>
-            <p>Acceptance of Orders. All orders are subject to acceptance in writing by Maketronics Communications LLP. Written acknowledgement of receipt does not, in and of itself, constitute acceptance.. <a href="/terms-and-condtions">Read more <i class="fa fa-arrow-right"></i></a></p>
+          <div class="card address-card">
+            <img src="/indian.png" alt="">
+            <p>106, Jaypee Klassic Wishtown, Sector 134<br>Noida, Uttar Pradesh 201304<br>India
+              <a href="mailto: sales@make-tronics.com"><i class="fa fa-envelope"></i> sales@make-tronics.com</a>
+              <a href="https://www.linkedin.com/company/maketronics/"><i class="fa fa-linkedin-square"></i> Maketronics</a>
           </div>
-          <div class="card">
-            <h2>Tie-ups with 3rd party component testing facilities</h2>
-            <p>The information about the tag... <a href="/terms-and-condtions">Read more <i class="fa fa-arrow-right"></i></a></p>
-          </div>
+
         </div>
       </div>
     </div>
     <div class="additional__info__box">
-      <h2>What Our Customers Say</h2>
-      <div class="main_customer_review_section">
-        <div class="customer_review_image_card">
-          <img src="https://kristr.com/wp-content/uploads/2024/07/price.png" />
+      <div class="stats-section">
+        <div class="stat-item">
+          <p>Customers from</p>
+            <h2 id="countries">0</h2>
+            <p>countries</p>
         </div>
-        <div class="customer_review_image_card">
-          <img src="https://kristr.com/wp-content/uploads/2024/07/sales.png" />
+        <div class="stat-item">
+          <p>Serving</p>
+            <h2 id="industries">0</h2>
+            <p>industries</p>
         </div>
-        <div class="customer_review_image_card">
-          <img src="https://kristr.com/wp-content/uploads/2024/07/quality.png" />
+        <div class="stat-item">
+          <p>Customer retention rate (%)</p>
+            <h2 id="retention">0 <span>%</span></h2>
         </div>
-        <div class="customer_review_image_card">
-          <img src="https://kristr.com/wp-content/uploads/2024/07/overall.png" />
-        </div>
-        <div class="customer_review_image_card">
-          <img src="https://kristr.com/wp-content/uploads/2024/07/delivery.png" />
-        </div>
-      </div>
+    </div>
     </div>
   </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const statsSection = document.querySelector('.stats-section');
+    const countriesEl = document.getElementById('countries');
+    const industriesEl = document.getElementById('industries');
+    const retentionEl = document.getElementById('retention');
+
+    let hasAnimated = false;
+
+    function animateValue(el, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            el.innerText = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    function animateStats() {
+        if (!hasAnimated && statsSection.getBoundingClientRect().top < window.innerHeight) {
+            animateValue(countriesEl, 0, 13, 2000);
+            animateValue(industriesEl, 0, 7, 2000);
+            animateValue(retentionEl, 0, 62, 2000);
+            hasAnimated = true;
+        }
+    }
+
+    window.addEventListener('scroll', animateStats);
+});
+  </script>
 </body>
 </html>
