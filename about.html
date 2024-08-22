@@ -73,7 +73,7 @@
         .card_about{
           display: flex;
           justify-content: space-between;
-          gap: 50px;
+          column-gap: 100px;
         }
 
        
@@ -126,11 +126,10 @@
           flex: 1 1 calc(33.333% - 40px);
             min-width: 280px;
             padding: 20px;
-            border: 1px solid #ccc;
             border-radius: 2px;
-            background-color: #f9f9f9;
             text-align: center;
             transition: transform 0.2s, box-shadow 0.2s;
+            justify-content: center;
         }
 
         .address-card {
@@ -139,7 +138,7 @@
 
         .address-card{
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
           text-align: left;
           gap: 10px;
         }
@@ -155,16 +154,16 @@
     gap: 50px;
     text-align: center;
     padding-block: 50px;
+    background-color: #d6d3d3;
 }
 
 .stat-item{
   width: 400px;
   padding: 20px;
-  border: 2px solid #9e9e9e9c;
   
 }
 .stat-item h2 {
-    font-size: 48px;
+    font-size: 60px;
     color: #004aad;
     margin: 0;
     font-weight: bold;
@@ -179,6 +178,12 @@
 .rev{
   flex-direction: row-reverse;
 }
+
+.address-card-right{
+      display: flex;
+      justify-content: center;
+    }
+
 @media (max-width: 768px) {
     .cont {
         height: 35vh;
@@ -210,6 +215,12 @@
         gap: 20px;
         padding: 36px;
     }
+
+    .stat-item{
+  width: 100%;
+  padding: 20px;
+  
+}
 
 }
 
@@ -251,10 +262,7 @@
       flex-direction: column;
       text-align: center;
     }
-    .address-card img{
-      width: 100%;
-    }
-
+    
     .stats-section {
         gap: 20px;
         padding: 36px;
@@ -272,9 +280,6 @@
     <div class="main">
       <div class="container">
         <div class="card card_about">
-         <div class="card_img_about">
-          <img src="/about.jpg" alt="">
-         </div>
          <div class="about_content">
           <h2>Who We Are</h2>
           <h5>About Maketronics</h5>
@@ -285,8 +290,9 @@
 
       <div class="container">
         <div class="card card_about rev">
-         <div class="card_img_about">
-          <img src="/mission.jpg" alt="">
+         <div class="about_content">
+          <h2>Our Vision</h2>
+          <p>To become a top 10 global distributor of obsolete electronic components by 2030, recognized for our ability to manage component obsolescence, our commitment to quality, and our innovative solutions that address the evolving needs of our customers.</p>
          </div>
          <div class="about_content">
           <h2>Our Mission</h2>
@@ -295,33 +301,17 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="card card_about">
-         <div class="card_img_about">
-          <img src="/vision.jpg" alt="">
-         </div>
-         <div class="about_content">
-          <h2>Our Vision</h2>
-          <p>To become a top 10 global distributor of obsolete electronic components by 2030, recognized for our ability to manage component obsolescence, our commitment to quality, and our innovative solutions that address the evolving needs of our customers.</p>
-         </div>
-        </div>
-      </div>
-
       <div class="seperate">
         <h2>Registered Offices</h2>
         <div class="container1">
           <div class="card address-card">
-            <img src="/uae.jpg" alt="">
             <p>Maketronics Communications L.L.C-FZ <br>Meydan Grandstand, 6th floor, Meydan road,<br>Nad Al Sheba, Dubai, U.A.E
               <a href="mailto: sales@make-tronics.com"><i class="fa fa-envelope"></i> sales@make-tronics.com</a>
-              <a href="https://www.linkedin.com/company/maketronics/"><i class="fa fa-linkedin-square"></i> Maketronics</a>
             </p>
           </div>
-          <div class="card address-card">
-            <img src="/indian.png" alt="">
+          <div class="card address-card address-card-right">
             <p>106, Jaypee Klassic Wishtown, Sector 134<br>Noida, Uttar Pradesh 201304<br>India
               <a href="mailto: sales@make-tronics.com"><i class="fa fa-envelope"></i> sales@make-tronics.com</a>
-              <a href="https://www.linkedin.com/company/maketronics/"><i class="fa fa-linkedin-square"></i> Maketronics</a>
           </div>
 
         </div>
